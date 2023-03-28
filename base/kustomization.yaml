@@ -11,6 +11,11 @@ secretGenerator:
     - secrets.txt
     type: Opaque
 
+configMapGenerator:
+- name: nginxconfig
+  files:
+  - nginx.conf
+  
 images:
 - name: nginx
   newName: my-registry/nginx
