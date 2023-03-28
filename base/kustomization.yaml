@@ -4,3 +4,14 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
+
+secretGenerator:
+  - name: env_file_secret
+    envs:
+    - secrets.txt
+    type: Opaque
+
+images:
+- name: nginx
+  newName: my-registry/nginx
+  newTag: v1

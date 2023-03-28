@@ -5,11 +5,17 @@ kind: Kustomization
 resources:
   - ../../base
 
-namespace: apps-dev
-nameSuffix: -dev
+namespace: apps-stg
+nameSuffix: -stg
+
+images:
+- name: nginx
+  newName: my-registry/nginx
+  newTag: v1
+
 replicas:
 - name: nginx
-  count: 2
+  count: 5
 
 commonLabels:
-  env: dev
+  env: stg
