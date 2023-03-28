@@ -24,3 +24,12 @@ images:
 replicas:
 - name: nginx
   count: 5
+
+patches:
+- patch: |-
+    - op: replace
+      path: /apiVersion
+      value: v2   
+  target:
+    kind: service
+    name: nginx-service
