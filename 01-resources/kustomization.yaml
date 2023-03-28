@@ -20,3 +20,7 @@ images:
 - name: nginx
   newName: my-registry/nginx
   newTag: v1
+
+replicas:
+- name: nginx
+  count: 5
