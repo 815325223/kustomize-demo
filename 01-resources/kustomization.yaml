@@ -9,3 +9,9 @@ configMapGenerator:
 - name: nginxconfig
   files:
   - nginx.conf
+
+secretGenerator:
+  - name: env_file_secret
+    envs:
+    - secrets.txt
+    type: Opaque
