@@ -15,3 +15,8 @@ secretGenerator:
     envs:
     - secrets.txt
     type: Opaque
+
+image:
+- name: nginx
+  newName: my-registry/nginx
+  newTag: v1
