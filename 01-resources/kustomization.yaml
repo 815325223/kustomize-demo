@@ -27,7 +27,7 @@ replicas:
 
 patches:
   - target:
-    kind: Deployment
+      kind: Deployment
     patch: |
       - op: replace
         path: /apiVersion
