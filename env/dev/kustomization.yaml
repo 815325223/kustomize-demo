@@ -5,6 +5,8 @@ kind: Kustomization
 resources:
   - ../../base
 
+namespace: apps-dev
+nameSuffix: -dev
 configMapGenerator:
 - name: nginxconfig
   files:
