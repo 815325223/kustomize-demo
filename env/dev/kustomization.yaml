@@ -9,7 +9,7 @@ namespace: apps-dev
 nameSuffix: -dev
 replicas:
 - name: nginx
-  count: 4
+  count: 2
 
 commonLabels:
   env: dev
