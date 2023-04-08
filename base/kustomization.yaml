@@ -5,16 +5,16 @@ resources:
   - deployment.yaml
   - service.yaml
 
-secretGenerator:
-  - name: env_file_secret
-    envs:
-    - secrets.txt
-    type: Opaque
+# secretGenerator:
+#   - name: env_file_secret
+#     envs:
+#     - secrets.txt
+#     type: Opaque
 
-configMapGenerator:
-- name: nginxconfig
-  files:
-  - nginx.conf
+# configMapGenerator:
+# - name: nginxconfig
+#   files:
+#   - nginx.conf
   
 # images:
 # - name: nginx
