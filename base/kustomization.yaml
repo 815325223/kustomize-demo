@@ -22,5 +22,5 @@ configMapGenerator:
 #   newTag: v1
 images:
 - name: nginx
-  newTag: latest
+  newTag: 1.17.7
 
